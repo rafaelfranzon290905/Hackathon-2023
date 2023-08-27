@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100%;
+height: 134px;
+flex-shrink: 0;
+background: #0C326F;
+}
+
+.divisoria {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #E9E9E9;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.divisoria-texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    color: #0C326F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.flex {
+    display: flex;
+}
+
+.input-text{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.input {
+    background-color: #000000;
+    border-radius: 1000px;
+    height: 45px;
+    width: 45px;
+    clip-path: circle(46% at 50% 50%);
+    margin-left: 5px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.botao {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+    height: 30px;
+    text-decoration: none;
+    background-color: rgb(250, 137, 0);
+}
+
+.none {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}

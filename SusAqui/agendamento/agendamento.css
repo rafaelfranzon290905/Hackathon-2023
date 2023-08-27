@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100%;
+    height: 134px;
+    flex-shrink: 0;
+    background: #0C326F;
+}
+
+.page-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.centro {
+    text-align: center;
+    padding-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.agendamento {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    width: 50%;
+    background-color: #E9E9E9;
+    border-radius: 20px;
+    
+}
+
+.input {
+    background-color: #000000;
+    border-radius: 1000px;
+    height: 45px;
+    width: 45px;
+    clip-path: circle(46% at 50% 50%);
+    margin-left: 5px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+.botao {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    text-decoration: none;
+    background-color: rgb(250, 137, 0);
+}
+
+.contato-coluna {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    gap: 20px;
+}
+
+.input-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+}
+
+.lable-text{
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    justify-content: center;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.telefone {
+    background-color: #b9b9b9;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    height: 40px;
+    margin-top: 7px;
+    border-style: none;
+    border: 1px solid black;
+    padding: 5px;
+    color: black;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>HOME</title>
+    <script src="home.js"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="header-logo">
+            <img src="img/logoAtualizada.png" alt="Logo SusAqui" class="header-logo-img">
+        </div>
+    </section>
+    <section class="body">
+        <div class="body-content">
+            <div>
+                <h1 class="body-content-title">
+                    Preencha com a moradia do paciente
+                </h1>
+            </div>
+            <div class="body-content-cep">
+                <input type="number" placeholder="CEP" class="body-content-cep-input" id="cep">
+            </div>
+            <div class="enderecos" id="enderecos">
+                <h1 class="page-title">Endereços</h1>
+                <div class="item">
+                    <div class="item-flex">
+                        <input class="endereco-informacoes" placeholder="Cidade" id="txCidade"></input>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-flex">
+                        <input class="endereco-informacoes" placeholder="Bairro" id="txInformacoes"></input>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-flex">
+                        <input class="endereco-informacoes" placeholder="Rua" id="txEndereco"></input>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-flex">
+                        <input class="endereco-informacoes" placeholder="Número" id="txInformacoes"></input>
+                    </div>
+                    
+                    <button class="botao-submit" type="submit" id="btPesquisar">Enviar</button>
+                </div>
+                
+            </div>
+        </div> 
+    </section>
+   
+    <section class="footer">
+        <div class="header-logo">
+            <img src="img/image 4.png" alt="Logo SusAqui" class="m">
+        </div>
+        <div class="header-logo">
+            <img src="img/image 5.png" alt="Logo SusAqui" class="m">
+        </div>
+        <div class="header-logo">
+            <img src="img/image 6.png" alt="Logo SusAqui" class="m">
+        </div>
+    </section>
+</body>
+    <script>
+    
+    document.querySelector('#btPesquisar').addEventListener('click',pesquisarCep);
+    
+    async function pesquisarCep(){
+        const cep = document.querySelector('#cep').value;
+        const url = `https://viacep.com.br/ws/${cep}/json/`;
+        
+        const res = await fetch(url);
+        const dados = await res.json();
+    
+        const txCidade = document.querySelector("#txCidade");
+        const txEndereco = document.querySelector("#txEndereco");
+        const txInformacoes = document.querySelector("#txInformacoes");
+    
+        txCidade.value = dados.localidade;
+        txEndereco.value = dados.bairro;
+        txInformacoes.value = dados.logradouro
+    
+    
+        const linkProximo = document.createElement('button')
+        linkProximo.classList = 'linkP'
+        linkProximo.innerHTML='<a href="dados/dados.html" class="linkP">confirmar endereço</a>'
+        document.querySelector('#enderecos').appendChild(linkProximo)
+    
+    }   
+    
+    </script>
+
+
+</html>

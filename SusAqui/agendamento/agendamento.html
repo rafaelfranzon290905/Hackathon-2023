@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="../img/logoAtualizada.png" alt="dados" />
+    </header>
+
+    <main>
+        <h1 class="page-title">Dados de agendamento:</h1>
+
+        <div class="agendamento">
+            <h2 class="centro">Seu agendamento está pronto. </h2>
+            <h3 class="centro">Selecione o método de contato:</h3>
+
+            <div class="contato-coluna">
+
+                <input type="text" placeholder="N° de Telefone:    (  )_____-____" class="telefone">
+
+                <div class="input-section">
+                    <div class="input-div">
+                        <input type="radio" id="whatsapp" name="contact" value="Whatsapp" class="input centro">
+                        <label for="whatsapp" class="lable-text">Whatsapp</label>
+                    </div>
+                    <div class="input-div">
+                        <input type="radio" id="whatsapp" name="contact" value="telefone" class="input centro">
+                        <label for="whatsapp" class="lable-text">Telefone</label>
+                    </div>
+
+                </div>
+
+
+                <button type="button" class="botao" id="bt">Enviar</button>
+            </div>
+
+        </div>
+
+        <div id="resposta">
+        </div>
+
+    </main>
+
+    <script>
+    
+        document.querySelector('#bt').addEventListener('click', colocar);
+
+        function colocar() {
+            let meio;
+            const whats = document.querySelector("#whatsapp");
+            const tele = document.querySelector('#telefone');
+
+            if (whats.checked) {
+                meio = "Whatsapp";
+            } else {
+                meio = "Telefone";
+            }
+
+            const legal = document.querySelector("#resposta");
+            legal.innerHTML = `<h2 class="centro">Você já está na fila! Confira o seu ${meio}:</h2>`;
+        }
+
+    </script>
+</body>
+
+</html>

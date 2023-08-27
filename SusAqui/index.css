@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100%;
+height: 134px;
+flex-shrink: 0;
+background: #0C326F;
+}
+
+.page-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botaoenviar{
+    background-color:#E9E9E9;
+}
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.body-content-title{
+    display: block;
+    color: #0C326F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.body-content-cep {
+    background-color: #E9E9E9;
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.body-content-cep-input{
+    background-color: #b9b9b9;
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 9px;
+    border-style: none;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.endereco-informacoes{
+    text-decoration: none;
+    color: black;
+    background-color: #b9b9b9;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    padding: 4px;
+
+}
+
+.enderecos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E9E9;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.item {
+    display: block;
+}
+
+.item-flex{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.numero {
+    background-color: #b9b9b9;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 22px;
+    padding: 4px;
+    width: 30%;
+}
+
+.footer{
+    display: flex;
+    height: 134px;
+    width: 100%;
+    background-color: #E9E9E9;
+}
+
+.m {
+    width: 80%;
+    margin-right: 20px;
+}
+
+.linkP {
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.botao-submit{
+    margin-top: 20px;
+    align-self: center;
+    margin-left: 115px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="prioridade.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../img/logoAtualizada.png" alt="dados"/>
+    </header>
+
+    <main>
+        <h1 class="titulo">Informações extras</h1>
+
+        <div class="divisoria">
+            <h1 class="divisoria-texto">O(a) paciente tem 60+ anos?</h1>
+            <div class="flex">
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Sim</p>
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Não</p>
+            </div>  
+        </div>
+
+        <div class="divisoria">
+            <h1 class="divisoria-texto">O(a) paciente é gestante?</h1>
+            <div class="flex">
+
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Sim</p>
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Não</p>
+
+            </div>  
+
+        </div>
+
+        <div class="divisoria">
+            <h1 class="divisoria-texto">O(a) paciente porta criança de colo?</h1>
+            <div class="flex">
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Sim</p>
+                <input type="checkbox" name="testando" class="input"></input>
+                <p class="input-text">Não</p>
+
+            </div>  
+        </div>
+            <button class="botao"><a href="../agendamento/agendamento.html" class="none">Agendar consulta:</a></button>
+
+    </main>
+</body>
+
+<script>
+
+    function onlyOne(checkbox) {
+        var checkboxes = document.getElementsByName('check')
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked = false
+        })
+    }
+        
+    </script>
+
+</html>
